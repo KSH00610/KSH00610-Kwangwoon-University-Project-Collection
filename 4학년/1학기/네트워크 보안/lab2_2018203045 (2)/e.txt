@@ -1,0 +1,4 @@
+" or username='user3';`;
+const maliciousDB = await dbPromise;
+const Mquery = `DELETE FROM Users WHERE username == "user3";`;
+await maliciousDB.get(Mquery);`"
